@@ -1,6 +1,6 @@
 {% set name = "vaex-astro" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "5c351600388de208bedb3383ef1f2ebf15239d39a862aef916fdb0368f1f85f3" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "2cb69aaef314fefcb12c9623a662b072a8e1ac0cd86dff5f0dd1d1f8cf78c45b" %}
 
 package:
   name: {{ name|lower }}
