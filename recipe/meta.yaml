@@ -23,7 +23,6 @@ requirements:
   run:
     - python
     - vaex-core >=0.1
-    - kapteyn  # [not win]
 
 test:
   imports:
