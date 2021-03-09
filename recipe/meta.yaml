@@ -1,6 +1,6 @@
 {% set name = "vaex-astro" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "9127e6bbb4db496dac61052d305d2083a2a447dcba244f1d4032a6f3a3797922" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "7682b650f66da4c71d87f92049e77d91a673e9f29992f6ff8e63bd7f105617dd" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pip
