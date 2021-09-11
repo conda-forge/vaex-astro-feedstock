@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - vaex-core >=4.0.0,<5
+    - vaex-core >=4.5.0,<5
     - astropy
 
 test:
