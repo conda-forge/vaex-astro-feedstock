@@ -1,6 +1,6 @@
 {% set name = "vaex-astro" %}
-{% set version = "0.9.3" %}
-{% set sha256 = "5474ccf335875a7da9e15bd9acff6c467d551805fafb4c9bdd8e4a06077ef518" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "e70342c6c67b6d5762609b2cf3a963aba4f131dac0026c55fa4a1ba86f1e8019" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
