@@ -18,15 +18,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - vaex-core >=4.5.0,<5
-    - astropy
+    - astropy >=6.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - vaex.astro
 
